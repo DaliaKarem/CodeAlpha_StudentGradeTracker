@@ -6,7 +6,6 @@ class StudentGradeTracker{
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         ArrayList<Student> studentList = new ArrayList<>();
-        Student student = new Student();
         System.out.println("Welcome to the Student Grade Tracker\n");
         // Adding students
         while (true) {
@@ -34,10 +33,10 @@ class StudentGradeTracker{
         for (Student s : studentList) {
             System.out.println("\nStudent Name: " + s.name);
             System.out.println("Grades: " + s.grades);
-            System.out.println("Average: " + s.Avg(s.grades));
-            System.out.println("Lowest Grade: " + s.getLowGrad(s.grades));
-            System.out.println("Highest Grade: " + s.getHighGrad(s.grades));
-            System.out.println("Grade Letter: " + s.gradeLetter(s.grades));
+            System.out.println("Average: " + Student.Avg(s.grades));
+            System.out.println("Lowest Grade: " + Student.getLowGrad(s.grades));
+            System.out.println("Highest Grade: " + Student.getHighGrad(s.grades));
+            System.out.println("Grade Letter: " + Student.gradeLetter(s.grades));
             System.out.println("-----------------------");
         }
 
