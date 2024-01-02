@@ -2,12 +2,12 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 class StudentGradeTracker{
+            // {90, 85, 75, 85, 95}, {100, 85, 75, 55, 95}, {55, 85, 65, 85, 95},
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         ArrayList<Student> studentList = new ArrayList<>();
         Student student = new Student();
         System.out.println("Welcome to the Student Grade Tracker\n");
-
         // Adding students
         while (true) {
             System.out.print("Enter student name (or 'done' to finish): ");
